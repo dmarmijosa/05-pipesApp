@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'Pipes de Angular',
         icon: 'pi pi-angular',
-        routerLink:[''],
+        routerLink: [''],
         items: [
           {
             label: 'Textos y Fechas',
@@ -38,8 +38,9 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Otro elemento',
+            label: 'Custom Pipe',
             icon: 'pi pi-cog',
+            routerLink: ['custom'],
           },
         ],
       },
