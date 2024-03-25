@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pipesApp';
+  private primengConfig =  inject(PrimeNGConfig);
+  ngOnInit() {
+    this.primengConfig.ripple = true;
+}
 }
